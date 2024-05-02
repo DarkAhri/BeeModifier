@@ -1,4 +1,4 @@
-package com.myname.mymodid;
+package com.DarkAhri.beebee;
 
 import java.io.File;
 

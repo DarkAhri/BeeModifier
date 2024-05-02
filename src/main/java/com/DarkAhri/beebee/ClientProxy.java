@@ -1,4 +1,4 @@
-package com.myname.mymodid;
+package com.DarkAhri.beebee;
 
 public class ClientProxy extends CommonProxy {
 
