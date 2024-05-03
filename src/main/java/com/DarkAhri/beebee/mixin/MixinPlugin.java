@@ -1,6 +1,5 @@
 package com.DarkAhri.beebee.mixin;
 
-import com.DarkAhri.beebee.Tags;
 import net.minecraft.launchwrapper.Launch;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -21,6 +20,7 @@ import java.util.function.Predicate;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
+import static com.DarkAhri.beebee.BeeBee.MODID;
 import static java.nio.file.Files.walk;
 
 public class MixinPlugin implements IMixinConfigPlugin {
@@ -124,7 +124,7 @@ public class MixinPlugin implements IMixinConfigPlugin {
         }
     }
 
-    public static final Logger LOG = LogManager.getLogger(Tags.VERSION + "Mixin");
+    public static final Logger LOG = LogManager.getLogger(MODID + "Mixin");
     private static final Path MODS_DIRECTORY_PATH = new File(Launch.minecraftHome, "mods/").toPath();
 
     public static File findJarOf(final Predicate<Path> mod) {
