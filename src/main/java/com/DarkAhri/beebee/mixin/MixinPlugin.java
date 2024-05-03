@@ -1,12 +1,7 @@
 package com.DarkAhri.beebee.mixin;
 
-import net.minecraft.launchwrapper.Launch;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.spongepowered.asm.lib.tree.ClassNode;
-import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
-import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
-import ru.timeconqueror.spongemixins.MinecraftURLClassPath;
+import static com.DarkAhri.beebee.BeeBee.MODID;
+import static java.nio.file.Files.walk;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -20,8 +15,15 @@ import java.util.function.Predicate;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
-import static com.DarkAhri.beebee.BeeBee.MODID;
-import static java.nio.file.Files.walk;
+import net.minecraft.launchwrapper.Launch;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.spongepowered.asm.lib.tree.ClassNode;
+import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
+import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
+
+import ru.timeconqueror.spongemixins.MinecraftURLClassPath;
 
 public class MixinPlugin implements IMixinConfigPlugin {
 

@@ -13,7 +13,7 @@ import cpw.mods.fml.common.event.FMLServerStartingEvent;
 @Mod(modid = BeeBee.MODID, version = Tags.VERSION, name = "BeeBee", acceptedMinecraftVersions = "[1.7.10]")
 public class BeeBee {
 
-    public static final String MODID = "beebee";
+    public static final String MODID = "BeeBee";
     public static final Logger LOG = LogManager.getLogger(MODID);
 
     @SidedProxy(clientSide = "com.DarkAhri.beebee.ClientProxy", serverSide = "com.DarkAhri.beebee.CommonProxy")
