@@ -17,6 +17,6 @@ public class MixinQueenWorkTick {
 
     @Inject(method = "queenWorkTick", at = @At("TAIL"), remap = false)
     private void queenWorkTick(IBee queen, CallbackInfo ci) {
-        queenWorkCycleThrottle += 5;
+        queenWorkCycleThrottle += 50;
     }
 }
