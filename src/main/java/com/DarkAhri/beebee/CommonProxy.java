@@ -1,5 +1,11 @@
 package com.DarkAhri.beebee;
 
+import static com.DarkAhri.beebee.BeeBee.MODID;
+
+import java.io.File;
+
+import com.DarkAhri.beebee.config.BeeBeeConfig;
+
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -10,10 +16,8 @@ public class CommonProxy {
     // preInit "Run before anything else. Read your config, create blocks, items, etc, and register them with the
     // GameRegistry." (Remove if not needed)
     public void preInit(FMLPreInitializationEvent event) {
-        Config.synchronizeConfiguration(event.getSuggestedConfigurationFile());
-
-        BeeBee.LOG.info(Config.greeting);
-        BeeBee.LOG.info("I am MyMod at version " + Tags.VERSION);
+        File configFile = new File(event.getModConfigurationDirectory(), MODID + ".cfg");
+        BeeBeeConfig config = new BeeBeeConfig(configFile);
     }
 
     // load "Do your mod setup. Build whatever data structures you care about. Register recipes." (Remove if not needed)
