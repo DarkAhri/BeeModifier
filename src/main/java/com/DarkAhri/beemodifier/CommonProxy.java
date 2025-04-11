@@ -1,15 +1,14 @@
 package com.DarkAhri.beemodifier;
 
-import static com.DarkAhri.beemodifier.BeeModifier.MODID;
-
-import java.io.File;
-
 import com.DarkAhri.beemodifier.config.BeeModifierConfig;
-
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
+
+import java.io.File;
+
+import static com.DarkAhri.beemodifier.BeeModifier.MODID;
 
 public class CommonProxy {
 

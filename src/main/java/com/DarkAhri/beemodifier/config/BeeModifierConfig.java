@@ -1,8 +1,8 @@
 package com.DarkAhri.beemodifier.config;
 
-import java.io.File;
-
 import net.minecraftforge.common.config.Configuration;
+
+import java.io.File;
 
 public class BeeModifierConfig {
 
