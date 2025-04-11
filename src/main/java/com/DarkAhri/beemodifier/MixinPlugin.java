@@ -1,18 +1,18 @@
-package com.DarkAhri.beebee;
+package com.DarkAhri.beemodifier;
+
+import com.gtnewhorizon.gtnhmixins.ILateMixinLoader;
+import com.gtnewhorizon.gtnhmixins.LateMixin;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
-
-import com.gtnewhorizon.gtnhmixins.ILateMixinLoader;
-import com.gtnewhorizon.gtnhmixins.LateMixin;
 
 @LateMixin
 public class MixinPlugin implements ILateMixinLoader {
 
     @Override
     public String getMixinConfig() {
-        return "mixins.beebee.late.json";
+        return "mixins.beemodifier.late.json";
     }
 
     @Override

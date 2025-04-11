@@ -3,7 +3,7 @@
 	"modList": [{
 		"modid": "${modId}",
 		"name": "${modName}",
-		"description": "A lttle Mod make Bee work faster.",
+		"description": "A little Mod make Bee work faster.",
 		"version": "${modVersion}",
 		"mcversion": "${minecraftVersion}",
 		"url": "private",

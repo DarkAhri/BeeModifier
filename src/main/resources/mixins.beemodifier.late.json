@@ -1,8 +1,8 @@
 {
   "required": true,
   "minVersion": "0.8.5-GTNH",
-  "package": "com.DarkAhri.beebee.mixin",
-  "refmap": "mixins.beebee.refmap.json",
+  "package": "com.DarkAhri.beemodifier.mixin",
+  "refmap": "mixins.beemodifier.refmap.json",
   "target": "@env(DEFAULT)",
   "compatibilityLevel": "JAVA_8",
   "mixins": [],

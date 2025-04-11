@@ -1,4 +1,4 @@
-package com.DarkAhri.beebee.mixin;
+package com.DarkAhri.beemodifier.mixin;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -6,7 +6,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import com.DarkAhri.beebee.config.BeeBeeConfig;
+import com.DarkAhri.beemodifier.config.BeeModifierConfig;
 
 import forestry.api.apiculture.IBee;
 import forestry.apiculture.BeekeepingLogic;
@@ -19,6 +19,6 @@ public class MixinQueenWorkTick {
 
     @Inject(method = "queenWorkTick", at = @At("TAIL"), remap = false)
     private void queenWorkTick(IBee queen, CallbackInfo ci) {
-        queenWorkCycleThrottle += BeeBeeConfig.queenWorkCycleThrottleIncrement;
+        queenWorkCycleThrottle += BeeModifierConfig.queenWorkCycleThrottleIncrement;
     }
 }

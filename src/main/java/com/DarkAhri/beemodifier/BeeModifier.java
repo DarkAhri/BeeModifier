@@ -1,7 +1,4 @@
-package com.DarkAhri.beebee;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+package com.DarkAhri.beemodifier;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
@@ -10,13 +7,16 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
 
-@Mod(modid = BeeBee.MODID, version = Tags.VERSION, name = "BeeBee", acceptedMinecraftVersions = "[1.7.10]")
-public class BeeBee {
+@Mod(modid = Tags.MODID, version = Tags.VERSION, name = Tags.MODNAME, acceptedMinecraftVersions = "[1.7.10]")
+public class BeeModifier {
 
-    public static final String MODID = "BeeBee";
-    public static final Logger LOG = LogManager.getLogger(MODID);
+    public static final String MODID = Tags.MODID;
+    public static final String MOD_ID = Tags.MODID;
+    public static final String MOD_NAME = Tags.MODNAME;
+    public static final String VERSION = Tags.VERSION;
 
-    @SidedProxy(clientSide = "com.DarkAhri.beebee.ClientProxy", serverSide = "com.DarkAhri.beebee.CommonProxy")
+
+    @SidedProxy(clientSide = "com.DarkAhri.beemodifier.ClientProxy", serverSide = "com.DarkAhri.beemodifier.CommonProxy")
     public static CommonProxy proxy;
 
     @Mod.EventHandler

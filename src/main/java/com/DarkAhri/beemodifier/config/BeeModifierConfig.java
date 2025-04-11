@@ -1,10 +1,10 @@
-package com.DarkAhri.beebee.config;
+package com.DarkAhri.beemodifier.config;
 
 import java.io.File;
 
 import net.minecraftforge.common.config.Configuration;
 
-public class BeeBeeConfig {
+public class BeeModifierConfig {
 
     private static final String CATEGORY_GENERAL = "general";
 
@@ -12,7 +12,7 @@ public class BeeBeeConfig {
 
     private Configuration config;
 
-    public BeeBeeConfig(File configFile) {
+    public BeeModifierConfig(File configFile) {
         config = new Configuration(configFile);
         loadConfig();
     }
