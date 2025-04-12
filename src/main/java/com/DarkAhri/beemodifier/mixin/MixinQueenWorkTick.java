@@ -1,13 +1,15 @@
 package com.DarkAhri.beemodifier.mixin;
 
-import com.DarkAhri.beemodifier.config.BeeModifierConfig;
-import forestry.api.apiculture.IBee;
-import forestry.apiculture.BeekeepingLogic;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+
+import com.DarkAhri.beemodifier.config.BeeModifierConfig;
+
+import forestry.api.apiculture.IBee;
+import forestry.apiculture.BeekeepingLogic;
 
 @Mixin(value = BeekeepingLogic.class, remap = false)
 public class MixinQueenWorkTick {
