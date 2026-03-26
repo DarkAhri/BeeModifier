@@ -8,7 +8,7 @@ public class BeeModifierConfig {
 
     private static final String CATEGORY_GENERAL = "general";
 
-    public static int queenWorkCycleThrottleIncrement = 50;
+    public static int queenWorkCycleThrottleIncrement = 55;
 
     private Configuration config;
 
@@ -24,7 +24,7 @@ public class BeeModifierConfig {
         queenWorkCycleThrottleIncrement = config.getInt(
             "queenWorkCycleThrottleIncrement",
             CATEGORY_GENERAL,
-            50, // 默认值
+            55, // 默认值
             1, // 最小值
             550, // 最大值
             "The value by which queenWorkCycleThrottle will be incremented each time.");
