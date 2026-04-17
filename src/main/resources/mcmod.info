@@ -6,7 +6,7 @@
 		"description": "A little Mod make Bee work faster.",
 		"version": "${modVersion}",
 		"mcversion": "${minecraftVersion}",
-		"url": "private",
+		"url": "https://github.com/DarkAhri/BeeModifier",
 		"updateUrl": "",
 		"authorList": ["Dark_Ahri"],
 		"credits": "",
