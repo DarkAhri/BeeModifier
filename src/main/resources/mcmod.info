@@ -3,10 +3,10 @@
 	"modList": [{
 		"modid": "${modId}",
 		"name": "${modName}",
-		"description": "A little Mod make Bee work faster.",
+		"description": "Make GTNH easier，Protect the liver.",
 		"version": "${modVersion}",
 		"mcversion": "${minecraftVersion}",
-		"url": "https://github.com/DarkAhri/BeeModifier",
+		"url": "https://github.com/DarkAhri/DarkModifier",
 		"updateUrl": "",
 		"authorList": ["Dark_Ahri"],
 		"credits": "",
