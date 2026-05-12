@@ -1,4 +1,4 @@
-package com.DarkAhri.beemodifier.mixin;
+package com.DarkAhri.DarkModifier.mixin;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -6,7 +6,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import com.DarkAhri.beemodifier.config.BeeModifierConfig;
+import com.DarkAhri.DarkModifier.config.BeeModifierConfig;
 
 import forestry.api.apiculture.IBee;
 import forestry.apiculture.BeekeepingLogic;

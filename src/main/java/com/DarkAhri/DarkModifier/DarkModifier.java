@@ -1,4 +1,4 @@
-package com.DarkAhri.beemodifier;
+package com.DarkAhri.DarkModifier;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
@@ -8,7 +8,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
 
 @Mod(modid = Tags.MODID, version = Tags.VERSION, name = Tags.MODNAME, acceptedMinecraftVersions = "[1.7.10]")
-public class BeeModifier {
+public class DarkModifier {
 
     public static final String MODID = Tags.MODID;
     public static final String MOD_ID = Tags.MODID;
@@ -16,8 +16,8 @@ public class BeeModifier {
     public static final String VERSION = Tags.VERSION;
 
     @SidedProxy(
-        clientSide = "com.DarkAhri.beemodifier.ClientProxy",
-        serverSide = "com.DarkAhri.beemodifier.CommonProxy")
+        clientSide = "com.DarkAhri.DarkModifier.ClientProxy",
+        serverSide = "com.DarkAhri.DarkModifier.CommonProxy")
     public static CommonProxy proxy;
 
     @Mod.EventHandler

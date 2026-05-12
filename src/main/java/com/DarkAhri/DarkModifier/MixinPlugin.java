@@ -1,4 +1,4 @@
-package com.DarkAhri.beemodifier;
+package com.DarkAhri.DarkModifier;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,13 +12,14 @@ public class MixinPlugin implements ILateMixinLoader {
 
     @Override
     public String getMixinConfig() {
-        return "mixins.beemodifier.late.json";
+        return "mixins.darkmodifier.late.json";
     }
 
     @Override
     public List<String> getMixins(Set<String> loadedMods) {
         List<String> mixins = new ArrayList<>();
         mixins.add("MixinQueenWorkTick");
+        mixins.add("MixinTileEntityCrop");
         return mixins;
     }
 }

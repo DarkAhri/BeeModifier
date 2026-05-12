@@ -1,10 +1,10 @@
-package com.DarkAhri.beemodifier;
+package com.DarkAhri.DarkModifier;
 
-import static com.DarkAhri.beemodifier.BeeModifier.MODID;
+import static com.DarkAhri.DarkModifier.DarkModifier.MODID;
 
 import java.io.File;
 
-import com.DarkAhri.beemodifier.config.BeeModifierConfig;
+import com.DarkAhri.DarkModifier.config.BeeModifierConfig;
 
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;

@@ -1,4 +1,4 @@
-package com.DarkAhri.beemodifier;
+package com.DarkAhri.DarkModifier;
 
 public class ClientProxy extends CommonProxy {
 

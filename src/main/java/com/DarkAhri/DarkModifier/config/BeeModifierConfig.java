@@ -1,4 +1,4 @@
-package com.DarkAhri.beemodifier.config;
+package com.DarkAhri.DarkModifier.config;
 
 import java.io.File;
 
