@@ -1,8 +1,10 @@
 package com.DarkAhri.DarkModifier.mixin;
 
-import ic2.core.crop.TileEntityCrop;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.injection.*;
+import org.spongepowered.asm.mixin.injection.Constant;
+import org.spongepowered.asm.mixin.injection.ModifyConstant;
+
+import ic2.core.crop.TileEntityCrop;
 
 @Mixin(TileEntityCrop.class)
 public class MixinTileEntityCrop {
