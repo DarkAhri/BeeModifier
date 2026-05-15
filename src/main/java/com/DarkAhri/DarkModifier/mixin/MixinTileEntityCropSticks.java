@@ -12,7 +12,7 @@ public class MixinTileEntityCropSticks {
     @ModifyConstant(
         method = "updateEntity", // 修改 updateEntity 方法中的常量
         constant = @Constant(intValue = 256),
-        remap = false)
+        remap = true)
     private int modifyTickRateInUpdateEntity(int original) {
         return 16;
     }

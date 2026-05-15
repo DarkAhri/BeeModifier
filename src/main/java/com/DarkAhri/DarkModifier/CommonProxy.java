@@ -4,7 +4,7 @@ import static com.DarkAhri.DarkModifier.DarkModifier.MODID;
 
 import java.io.File;
 
-import com.DarkAhri.DarkModifier.config.BeeModifierConfig;
+import com.DarkAhri.DarkModifier.config.DarkModifierConfig;
 
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
@@ -17,7 +17,7 @@ public class CommonProxy {
     // GameRegistry." (Remove if not needed)
     public void preInit(FMLPreInitializationEvent event) {
         File configFile = new File(event.getModConfigurationDirectory(), MODID + ".cfg");
-        BeeModifierConfig config = new BeeModifierConfig(configFile);
+        DarkModifierConfig config = new DarkModifierConfig(configFile);
     }
 
     // load "Do your mod setup. Build whatever data structures you care about. Register recipes." (Remove if not needed)

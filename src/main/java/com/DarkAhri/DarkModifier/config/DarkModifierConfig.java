@@ -4,7 +4,7 @@ import java.io.File;
 
 import net.minecraftforge.common.config.Configuration;
 
-public class BeeModifierConfig {
+public class DarkModifierConfig {
 
     private static final String CATEGORY_GENERAL = "general";
 
@@ -12,7 +12,7 @@ public class BeeModifierConfig {
 
     private Configuration config;
 
-    public BeeModifierConfig(File configFile) {
+    public DarkModifierConfig(File configFile) {
         config = new Configuration(configFile);
         loadConfig();
     }
