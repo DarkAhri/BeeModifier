@@ -18,9 +18,9 @@ public class MixinPlugin implements ILateMixinLoader {
     @Override
     public List<String> getMixins(Set<String> loadedMods) {
         List<String> mixins = new ArrayList<>();
-            mixins.add("MixinQueenWorkTick");
-            mixins.add("MixinTileEntityCrop");
-            mixins.add("MixinTileEntityCropSticks");
+        mixins.add("MixinQueenWorkTick");
+        mixins.add("MixinTileEntityCrop");
+        mixins.add("MixinTileEntityCropSticks");
         return mixins;
     }
 }
